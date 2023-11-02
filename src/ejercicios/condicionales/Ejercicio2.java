@@ -3,6 +3,13 @@ package ejercicios.condicionales;
 import java.util.Scanner;
 
 public class Ejercicio2 {
+    /*
+    * PRUEBAS:
+    * Entrada    | ResIdeal    | ResObt
+    * 28418425   | Q           | Q
+    * 22917900   | X           | X
+    * 99386162   | B           | B
+    * */
     public static void main(String[] args) {
         long entradaUsuario;
         String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
