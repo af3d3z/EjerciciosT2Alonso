@@ -11,6 +11,7 @@ public class Ejercicio2 {
     * 99386162   | B           | B
     * */
     public static void main(String[] args) {
+        //TODO: change the structure of the exercise to use a switch case
         long entradaUsuario;
         String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
         int numLetra;
