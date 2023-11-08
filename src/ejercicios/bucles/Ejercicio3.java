@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        int numero;
+        int numero, n;
         Scanner sc = new Scanner(System.in);
         boolean correcto = false;
 
@@ -13,16 +13,23 @@ public class Ejercicio3 {
             try{
                 System.out.println("Ingresa un número:");
                 numero = sc.nextInt();
-
-                for(int i = 0; i < numero; i++){
-                    for(int j = 0; j < i; j++){
-                        System.out.print(" * ");
+                n = numero;
+                for(int i = 1; i <= numero; i++){
+                    for(int j = 1; j <= numero; j++){
+                        if(j>=n){
+                            System.out.print("* ");
+                        }else{
+                            System.out.print(" ");
+                        }
                     }
+                    n--;
                     System.out.println();
                 }
+                correcto = true;
             }catch(InputMismatchException e){
                 System.err.println("Valor incorrecto.");
             }
         }while(!correcto);
+        sc.close();
     }
 }

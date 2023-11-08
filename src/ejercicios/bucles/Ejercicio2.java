@@ -5,12 +5,10 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        // TODO: terminar este ejercicio
         int numero;
         boolean correcto = false;
         Scanner sc = new Scanner(System.in);
         boolean primo = true;
-        int j = 2;
 
         do {
             try{
@@ -18,24 +16,32 @@ public class Ejercicio2 {
                 numero = sc.nextInt();
 
 
-                for(int i = 1; i<= numero;i++){
-                    while(j <= i-1 && primo){
-                        if(i%j==0){
+                for(int i = 1; i <= numero;i++) {
+                    primo = true;
+
+                    /* mostramos el 1 y el dos porque sabemos que son primos y
+                     que si en los siguientes bucles al contador le damos el valor 1
+                     no mostrará ningún dato porque si a uno le quitas uno tienes cero
+                     y eso hace que no se cumpla siquiera la condición del bucle for */
+                    if(i <= 2)
+                        System.out.printf("%d ", i);
+
+                    for (int j = 2; j <= i - 1; j++) {
+                        if (i % j == 0) {
                             primo = false;
                             j++;
                         }
-                        if(primo == true){
+                        if (j == i-1 && primo) {
                             System.out.printf("%d ", i);
-                            continue;
                         }
                     }
                 }
-
                 correcto = true;
             }catch(InputMismatchException e){
                 System.err.println("Has introducido un dato incorrecto.");
                 sc.nextLine();
             }
         }while(!correcto);
+        sc.close();
     }
 }

@@ -22,6 +22,20 @@ public class Ejercicio2 {
         entradaUsuario = sc.nextLong();
 
         numLetra = (int) (entradaUsuario % 23);
+
+        letra = switch(numLetra) {
+            case 0 -> {yield('T');}
+            case 1 -> {yield('R');}
+            case 2 -> {yield('W');}
+            case 3 -> {yield('A');}
+            case 4 -> {yield('G');}
+            case 5 -> {yield('M');}
+            case 6 -> {yield('Y');}
+            case 7 -> {yield('W');}
+            case 8 -> {yield('W');}
+
+        }
+
         letra = letras.charAt(numLetra);
 
         System.out.printf("Tu DNI completo sería: %d%c", entradaUsuario, letra);
