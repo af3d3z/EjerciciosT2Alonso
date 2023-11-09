@@ -4,6 +4,25 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio3 {
+    /*
+     * PRUEBAS:
+     * Entrada
+     * 4:
+     *     *
+          * *
+         * * *
+        * * * *
+
+     * 7:
+     *       *
+            * *
+           * * *
+          * * * *
+         * * * * *
+        * * * * * *
+       * * * * * * *
+     * */
+
     public static void main(String[] args) {
         int numero, n;
         Scanner sc = new Scanner(System.in);

@@ -3,6 +3,14 @@ package ejercicios.bucles;
 import java.util.Scanner;
 
 public class Ejercicio1 {
+    /*
+     * PRUEBAS:
+     * Entrada(hora, segundos) | ResIdeal     | ResObt
+     * 20:59:59, 7200          | 22:59:59     | 22:59:59
+     * 05:56:59, 156           | 05:58:56     | 05:58:56
+     * 15:42:22, 29            | 15:45:51     | 15:45:51
+     * */
+
     public static void main(String[] args) {
         int horas;
         int minutos;
@@ -42,6 +50,8 @@ public class Ejercicio1 {
                 minutos = minutos / 60;
                 horas++;
             }
+        }else{
+            segundos += segundosIncrementar;
         }
 
         System.out.printf("%02d:%02d:%02d\n", horas, minutos, segundos);

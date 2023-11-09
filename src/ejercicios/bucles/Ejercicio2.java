@@ -4,6 +4,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio2 {
+    /*
+     * PRUEBAS:
+     * Entrada | ResIdeal                   | ResObt
+     * 12      | 1 2 3 5 7 11               | 1 2 3 5 7 11
+     * 6       | 1 2 3 5                    | 1 2 3 5
+     * 26      | 1 2 3 5 7 11 13 17 19 23   | 1 2 3 5 7 11 13 17 19 23
+     * */
+
     public static void main(String[] args) {
         int numero;
         boolean correcto = false;

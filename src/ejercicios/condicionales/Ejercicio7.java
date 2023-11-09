@@ -7,8 +7,8 @@ public class Ejercicio7 {
     /*
     * PRUEBAS:
     * Entrada    | ResIdeal     | ResObt
-    * 20:59:59   | 21:00:00     | 21:0:0
-    * 5:56:59    | 5:57:00      | 5:57:0
+    * 20:59:59   | 21:00:00     | 21:00:00
+    * 05:56:59   | 05:57:00    | 05:57:00
     * 15:42:22   | 15:42:23     | 15:42:23
     * */
 
@@ -43,6 +43,7 @@ public class Ejercicio7 {
 
         segundoUsuario++;
 
+        // evaluamos cuantos segundos tenemos y lo asignamos a su variable
         if (segundoUsuario >= SEGUNDOS) {
             minutoUsuario++;
             segundoUsuario = 0;
@@ -56,7 +57,7 @@ public class Ejercicio7 {
         if (horaUsuario >= HORAS)
             horaUsuario = 0;
 
-        System.out.printf("Hora al añadirle un segundo: %d:%d:%d\n", horaUsuario, minutoUsuario, segundoUsuario);
+        System.out.printf("Hora al añadirle un segundo: %02d:%02d:%02d\n", horaUsuario, minutoUsuario, segundoUsuario);
         sc.close();
     }
 }

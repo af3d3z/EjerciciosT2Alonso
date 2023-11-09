@@ -4,6 +4,13 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Ejercicio8 {
+    /*
+     * PRUEBAS:
+     * Entrada(distancia, dias)    | ResIdeal     | ResObt
+     * 566,3                       | 1415,00€     | 1415,00€
+     * 900,20                      | 1575,00€     | 1575,00€
+     * 900,3                       | 2250,00€     | 2250,00€
+     * */
     public static void main(String[] args) {
         final double PRECIO_KM = 2.5;
         double distancia, precioBillete;

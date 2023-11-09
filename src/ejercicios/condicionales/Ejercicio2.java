@@ -11,9 +11,7 @@ public class Ejercicio2 {
     * 99386162   | B           | B
     * */
     public static void main(String[] args) {
-        //TODO: change the structure of the exercise to use a switch case
         long entradaUsuario;
-        String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
         int numLetra;
         char letra;
         Scanner sc = new Scanner(System.in);
@@ -31,12 +29,24 @@ public class Ejercicio2 {
             case 4 -> {yield('G');}
             case 5 -> {yield('M');}
             case 6 -> {yield('Y');}
-            case 7 -> {yield('W');}
-            case 8 -> {yield('W');}
-
-        }
-
-        letra = letras.charAt(numLetra);
+            case 7 -> {yield('F');}
+            case 8 -> {yield('P');}
+            case 9 -> {yield('D');}
+            case 10 -> {yield('X');}
+            case 11 -> {yield('B');}
+            case 12 -> {yield('N');}
+            case 13 -> {yield('J');}
+            case 14 -> {yield('Z');}
+            case 15 -> {yield('S');}
+            case 16 -> {yield('Q');}
+            case 17 -> {yield('V');}
+            case 18 -> {yield('H');}
+            case 19 -> {yield('L');}
+            case 20 -> {yield('C');}
+            case 21 -> {yield('K');}
+            case 22 -> {yield('E');}
+            default -> {yield(' ');}
+        };
 
         System.out.printf("Tu DNI completo sería: %d%c", entradaUsuario, letra);
         sc.close();
